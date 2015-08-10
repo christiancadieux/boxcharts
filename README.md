@@ -47,6 +47,7 @@ while highlighting the zoom region on the main graph.
 
 This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'.
 This is interesting. Lets conpare the 2 methods:
+
 1-Time-window control: This is the traditional visualisation where all the points are shown but only for a time-subset of the data. Since there is too
   many data, only a subset is displayed and it's the user's responsibility to find interesting data by moving the time-window. Since the software
   does not really know what the user is looking for, it allows the user to 'wonder' around in time.
