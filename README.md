@@ -59,6 +59,8 @@ This is interesting. Lets conpare the 2 methods:
   (display a new time-window vs display a different aggregation) but the end-result is more usefull: no more wandering yet still fast rendering.
 
 
+Notes:
+
 This prototype generate points in the shape of 2 waves with outliers every 1000 points.
 
 To run the application, install gem,ruby,sinatra-contrib and run:
@@ -66,8 +68,7 @@ $ ./boxchart.rb
 
 then point your chrome browser to localhost:4567/
 
-
-Todo: Adding reactivity  to the graph (for example with Websocket/Ractivejs or Vert.x) makes it even more interesting
+Adding reactivity  to the graph (for example with Websocket/Ractivejs or Vert.x) makes it even more interesting
 because while the number of points is increasing over time, the graph can still remain at the same granularity. 
 
 
