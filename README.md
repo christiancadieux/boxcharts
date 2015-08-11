@@ -45,17 +45,8 @@ while highlighting the zoom region on the main graph.
 
 ![Alt text](images/snap3.gif "Optional title")
 
-This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'.  Lets compare the 2 methods to illustrate:
-
-1-Time-window control: This is the traditional visualisation where all the points are shown but only for a time-subset of the data. Since there is too
-  many data, only a subset is displayed and it's the user's responsibility to find interesting data by moving the time-window. Since the software
-  does not really know what the user is looking for, it allows the user to 'wander' around in time.
-
-2-Density Control: Here all the data is shown but the density aggregation is left to the user. This is required because the software does not try to
-  analyze the 'randomness' of the data. If the data is very tight, it's shape can be visualized with a very few box&whiskers. But if the data has
-  much more variability, then a good visualization will require more box&whiskers. Instead of trying to guess the right aggregation level, the 
-  software allows the user to select the aggregation and recalculate the points on the server. The steps are similar to the 'Time-window' approach
-  (display a new time-window vs display a different aggregation level) but the end-result is more usefull: no more wandering yet still fast rendering.
+This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'. Since the number of box-whiskers displayed has more to do wiith the physical width of the graph then with the actual number of points to display, it's possible to calculate an optimal 'most readable' number of box&whiskers and always display that number. 
+But allowing the user to adjust the number of boxes helps to illustrate the idea and shows the speed difference. It's also interesting to notice how small the number of box&wiskers is sufficient to still express the general 'shape' of the graph. 
 
 
 Notes:
