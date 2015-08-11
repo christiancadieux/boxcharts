@@ -2,7 +2,7 @@
 boxchart-graph
 ==============
 
-**Fast Rendering of large time-series on interactive graphs using Box Plot  (or Improved Time-Series Visualization using  'Time' to 'Frequency' Transformation)**
+**Fast Rendering of large time-series on interactive graphs using Box Plot  (or Improved Time-Series Visualization using  'Time' to 'Aggregation' Transformation)**
 
 Displaying time-series graphs on browsers using javascript works very well until the number of points gets too large. Trying to display 
 hundreds of thousands of points is very slow and hard to read. 
