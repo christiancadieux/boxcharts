@@ -15,7 +15,7 @@ for example outliers that are far from the average or the general distribution o
 
 What we want is a graphing tool that still allows the user to control the visualization, but instead of controlling which time-window is 
 displayed, the user sees all the data but controls the aggregation 'density' of the visualization. The density aggregation transformation is 
-generated in real-time on the server (A little bit like a Fourier transformation that convert from time to frequencies).
+generated in real-time on the server.
 
 Here is a prototype of this solution:
 Tis prototype will generate boxplots (also called box&whiskers http://en.wikipedia.org/wiki/Box_plot) on the server and store in 
