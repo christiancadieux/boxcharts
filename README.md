@@ -45,6 +45,8 @@ while highlighting the zoom region on the main graph.
 
 ![Alt text](images/snap3.gif "Drilldown")
 
+Even when displaying 100K points, there is very little degradation (as long as the server can keep up) since there is only 20 boxes  to display (each representing 5000 points). If 20 is too little, it's easy to increase the number of boxes interactively.
+
 This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'. Since the number of box-whiskers displayed has more to do with the physical width of the graph then with the actual number of points to display, it's possible to calculate an optimal 'most readable' number of box&whiskers and always display that number. 
 But allowing the user to adjust the number of boxes helps to illustrate the idea and shows the speed difference. It's also interesting to notice how small the number of box&whiskers is sufficient to still express the general 'shape' of the graph. 
 
