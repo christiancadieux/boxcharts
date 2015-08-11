@@ -48,7 +48,7 @@ while highlighting the zoom region on the main graph.
 This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'. Since the number of box-whiskers displayed has more to do with the physical width of the graph then with the actual number of points to display, it's possible to calculate an optimal 'most readable' number of box&whiskers and always display that number. 
 But allowing the user to adjust the number of boxes helps to illustrate the idea and shows the speed difference. It's also interesting to notice how small the number of box&whiskers is sufficient to still express the general 'shape' of the graph. 
 
-![Alt text](images/o_whiskers3.avi "Animation")
+![Display Animation](images/o_whiskers3.avi "Animation")
 
 Notes:
 
