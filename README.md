@@ -31,23 +31,24 @@ of the graph is clear, the outliers are visible but the rendering of the page is
 is small and it's already inconvenient.
 
 
-![Alt text](images/snap1.gif "Optional title")
+![Alt text](images/snap1.gif "Show all the points")
 
 With the aggregation level set to 34, the server only sends 34 boxes, each with information about 303 points: The graph is more readable,
 rendering is instantaneous, the outliers are still visible and it's easy to drill-down. Outliers (min or max) are seen as long 'whiskers'. The height of each box represent the location of the middle 50% of the points in the box. The red line is the average and the black like (in the box) is the median.
 [Re-Generate] can be used to generate a different number of points on the server.
 
-![Alt text](images/snap2.gif "Optional title")
+![Alt text](images/snap2.gif "Show 34 Box&Whiskers")
 
 When adjusting the Zoom page to show all the points, the normal graph is shown for the region selected. Only 304 points
 are displayed so rendering is still fast. Panning right/left can be done on the Zoom page at every aggregation level
 while highlighting the zoom region on the main graph.
 
-![Alt text](images/snap3.gif "Optional title")
+![Alt text](images/snap3.gif "Drilldown")
 
 This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'. Since the number of box-whiskers displayed has more to do with the physical width of the graph then with the actual number of points to display, it's possible to calculate an optimal 'most readable' number of box&whiskers and always display that number. 
 But allowing the user to adjust the number of boxes helps to illustrate the idea and shows the speed difference. It's also interesting to notice how small the number of box&whiskers is sufficient to still express the general 'shape' of the graph. 
 
+![Alt text](images/o_whiskers3.avi "Animation")
 
 Notes:
 
