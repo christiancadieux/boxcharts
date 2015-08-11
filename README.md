@@ -14,14 +14,14 @@ This solves the speed problem because aggregation on the server can be very fast
 for example outliers that are far from the average or the general distribution of the points in the aggregation.
 
 What we want is a graphing tool that still allows the user to control the visualization, but instead of controlling which time-window is 
-displayed, the user sees all the data but controls the aggegation 'density' of the visualization. The density aggregation transformation is 
+displayed, the user sees all the data but controls the aggregation 'density' of the visualization. The density aggregation transformation is 
 generated in real-time on the server (A little bit like a Fourier transformation that convert from time to frequencies).
 
 Here is a prototype of this solution:
 Tis prototype will generate boxplots (also called box&whiskers http://en.wikipedia.org/wiki/Box_plot) on the server and store in 
 each box the average, min, max, low, high, median and # of points. The aggregation level will be controlled by the browser
 and it will be interactive so that the user can change the aggregation level dynamically and drill-down/explode a selected boxplot.
-This allows to visualize the time-series with little degradation and still be able to quickly drill-down from box to points. Other visualizaton technique like color-density graph could be used but boxpot gives a visual representation of
+This allows to visualize the time-series with little degradation and still be able to quickly drill-down from box to points. Other visualization technique like color-density graph could be used but boxplot gives a visual representation of
 the statistical distribution of the points in each box (min,max..) with the average of the box in red. It also attempt to
 connect the averages using an interpolation function.
 
@@ -34,7 +34,7 @@ is small and it's already inconvenient.
 ![Alt text](images/snap1.gif "Optional title")
 
 With the aggregation level set to 34, the server only sends 34 boxes, each with information about 303 points: The graph is more readable,
-rendering is instantaneous, the outliers are still visible and it's easy to drill-dow. Outliers (min or max) are seen as long 'whiskers'. The height of each box represent the location of the middle 50% of the points in the box. The red line is the average and the black like (in the box) is the median.
+rendering is instantaneous, the outliers are still visible and it's easy to drill-down. Outliers (min or max) are seen as long 'whiskers'. The height of each box represent the location of the middle 50% of the points in the box. The red line is the average and the black like (in the box) is the median.
 [Re-Generate] can be used to generate a different number of points on the server.
 
 ![Alt text](images/snap2.gif "Optional title")
@@ -45,8 +45,8 @@ while highlighting the zoom region on the main graph.
 
 ![Alt text](images/snap3.gif "Optional title")
 
-This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'. Since the number of box-whiskers displayed has more to do wiith the physical width of the graph then with the actual number of points to display, it's possible to calculate an optimal 'most readable' number of box&whiskers and always display that number. 
-But allowing the user to adjust the number of boxes helps to illustrate the idea and shows the speed difference. It's also interesting to notice how small the number of box&wiskers is sufficient to still express the general 'shape' of the graph. 
+This prototype begs the question 'Why give the user the option to control the aggregation? Can the software just pick a reasonable aggregation?'. Since the number of box-whiskers displayed has more to do with the physical width of the graph then with the actual number of points to display, it's possible to calculate an optimal 'most readable' number of box&whiskers and always display that number. 
+But allowing the user to adjust the number of boxes helps to illustrate the idea and shows the speed difference. It's also interesting to notice how small the number of box&whiskers is sufficient to still express the general 'shape' of the graph. 
 
 
 Notes:
